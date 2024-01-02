@@ -3,8 +3,9 @@ pipeline{
   stages{
     stage('Build'){
       steps{
-        sh "chmod +x /var/lib/jenkins/workspace/jenkins-docker-ecr-push/docker_ci_build_ecr/docker_python/docker_ecr_push.sh"
-        sh "./var/lib/jenkins/workspace/jenkins-docker-ecr-push/docker_ci_build_ecr/docker_python/docker_ecr_push.sh"
+        echo 'hello everyone'
+        //sh "chmod +x /var/lib/jenkins/workspace/jenkins-docker-ecr-push/docker_ci_build_ecr/docker_python/docker_ecr_push.sh"
+        //sh "./var/lib/jenkins/workspace/jenkins-docker-ecr-push/docker_ci_build_ecr/docker_python/docker_ecr_push.sh"
       }
     }
   }
